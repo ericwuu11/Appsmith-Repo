@@ -1,8 +1,12 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "home_page",
       "isDefault": true
+    },
+    {
+      "id": "Page1_persona1",
+      "isDefault": false
     }
   ],
   "viewMode": false,

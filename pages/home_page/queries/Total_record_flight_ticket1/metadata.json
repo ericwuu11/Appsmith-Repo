@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "home_page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -44,7 +44,7 @@
     "userPermissions": [],
     "createdAt": "2024-04-18T08:16:28Z"
   },
-  "id": "Page1_Total_record_flight_ticket1",
+  "id": "home_page_Total_record_flight_ticket1",
   "deleted": false,
   "gitSyncId": "6620b9ca9182802142d5501b_6620d6dc9182802142d55029"
 }

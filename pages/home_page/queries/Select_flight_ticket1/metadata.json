@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "Insert_flight_ticket1",
+    "name": "Select_flight_ticket1",
     "datasource": {
       "name": "Untitled datasource 1",
       "pluginId": "mysql-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "home_page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO flight_ticket (Class,customerName,cost,CustomerID,flight_no) VALUES ('{{(Table1.newRow || {}).Class}}','{{(Table1.newRow || {}).customerName}}','{{(Table1.newRow || {}).cost}}','{{(Table1.newRow || {}).CustomerID}}','{{(Table1.newRow || {}).flight_no}}')",
+      "body": "SELECT\n  *\nFROM\n  flight_ticket\nWHERE\n  Class LIKE '%{{Table1.searchText}}%'\nORDER BY\n  {{Table1.sortOrder.column || 'TicketID'}} {{Table1.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{Table1.pageSize}}\nOFFSET\n  {{Table1.pageOffset}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,19 +36,19 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(Table1.newRow || {}).Class",
-      "(Table1.newRow || {}).CustomerID",
-      "(Table1.newRow || {}).cost",
-      "(Table1.newRow || {}).customerName",
-      "(Table1.newRow || {}).flight_no"
+      "Table1.pageOffset",
+      "Table1.pageSize",
+      "Table1.searchText",
+      "Table1.sortOrder.column || 'TicketID'",
+      "Table1.sortOrder.order !== \"desc\" ? \"\" : \"DESC\""
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-04-18T08:16:30Z"
+    "createdAt": "2024-04-18T08:16:28Z"
   },
-  "id": "Page1_Insert_flight_ticket1",
+  "id": "home_page_Select_flight_ticket1",
   "deleted": false,
-  "gitSyncId": "6620b9ca9182802142d5501b_6620d6dd9182802142d5502d"
+  "gitSyncId": "6620b9ca9182802142d5501b_6620d6dc9182802142d55028"
 }

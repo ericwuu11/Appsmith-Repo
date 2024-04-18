@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "home_page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -67,7 +67,7 @@
     "userPermissions": [],
     "createdAt": "2024-04-18T06:12:38Z"
   },
-  "id": "Page1_Api1",
+  "id": "home_page_Api1",
   "deleted": false,
   "gitSyncId": "6620b9ca9182802142d5501b_6620b9d69182802142d55020"
 }

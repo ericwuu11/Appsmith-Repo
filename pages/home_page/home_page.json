@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "home_page",
+    "slug": "home-page",
     "layouts": [
       {
         "viewMode": false,
@@ -29,7 +29,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_Api1",
+              "id": "home_page_Api1",
               "name": "Api1",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -44,7 +44,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page1_Select_flight_ticket1",
+              "id": "home_page_Select_flight_ticket1",
               "name": "Select_flight_ticket1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -60,7 +60,7 @@
           ],
           [
             {
-              "id": "Page1_Total_record_flight_ticket1",
+              "id": "home_page_Total_record_flight_ticket1",
               "name": "Total_record_flight_ticket1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -73,14 +73,15 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "home_page",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "6620b9ca9182802142d5501b_6620b9cb9182802142d5501d"
