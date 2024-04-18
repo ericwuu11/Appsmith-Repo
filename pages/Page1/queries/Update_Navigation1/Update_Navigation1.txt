@@ -1,0 +1,1 @@
+UPDATE Navigation SET Routing= '{{Table2.updatedRow.Routing}}', Estimated_time= '{{Table2.updatedRow.Estimated_time}}', Fare= '{{Table2.updatedRow.Fare}}', Distance= '{{Table2.updatedRow.Distance}}', Transportation_Method= '{{Table2.updatedRow.Transportation_Method}}', CustomerID= '{{Table2.updatedRow.CustomerID}}' WHERE Navigation_ID= '{{Table2.updatedRow.Navigation_ID}}';

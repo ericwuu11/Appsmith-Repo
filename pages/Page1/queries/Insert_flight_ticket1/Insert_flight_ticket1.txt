@@ -1,0 +1,1 @@
+INSERT INTO flight_ticket (Class,customerName,cost,CustomerID,flight_no) VALUES ('{{(Table1.newRow || {}).Class}}','{{(Table1.newRow || {}).customerName}}','{{(Table1.newRow || {}).cost}}','{{(Table1.newRow || {}).CustomerID}}','{{(Table1.newRow || {}).flight_no}}')

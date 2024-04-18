@@ -1,0 +1,1 @@
+UPDATE flight_ticket SET Class= '{{Table1.updatedRow.Class}}', customerName= '{{Table1.updatedRow.customerName}}', cost= '{{Table1.updatedRow.cost}}', CustomerID= '{{Table1.updatedRow.CustomerID}}', flight_no= '{{Table1.updatedRow.flight_no}}' WHERE TicketID= '{{Table1.updatedRow.TicketID}}';

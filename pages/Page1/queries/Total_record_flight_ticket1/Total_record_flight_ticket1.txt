@@ -1,0 +1,1 @@
+SELECT COUNT(*) from flight_ticket WHERE Class LIKE '%{{Table1.searchText}}%';

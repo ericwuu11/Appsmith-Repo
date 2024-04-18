@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  Navigation
+WHERE
+  Routing LIKE '%{{Table2.searchText}}%'
+ORDER BY
+  {{Table2.sortOrder.column || 'Navigation_ID'}} {{Table2.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Table2.pageSize}}
+OFFSET
+  {{Table2.pageOffset}}

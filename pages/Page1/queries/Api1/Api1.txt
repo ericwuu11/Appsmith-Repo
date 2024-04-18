@@ -1,0 +1,8 @@
+{
+  "TicketID": {{JSONForm1.formData.TicketID}},
+  "Class": {{JSONForm1.formData.Class}},
+  "customerName":{{JSONForm1.formData.customerName}},
+  "cost": {{JSONForm1.formData.cost}},
+  "CustomerID": {{JSONForm1.formData.CustomerID}},
+	"flight_no": {{JSONForm1.formData.flight_no}}
+}

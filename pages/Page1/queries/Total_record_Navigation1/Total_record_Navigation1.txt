@@ -1,0 +1,1 @@
+SELECT COUNT(*) from Navigation WHERE Routing LIKE '%{{Table2.searchText}}%';

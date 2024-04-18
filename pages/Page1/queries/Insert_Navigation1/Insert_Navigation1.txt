@@ -1,0 +1,1 @@
+INSERT INTO Navigation (Routing,Estimated_time,Fare,Distance,Transportation_Method,CustomerID) VALUES ('{{(Table2.newRow || {}).Routing}}','{{(Table2.newRow || {}).Estimated_time}}','{{(Table2.newRow || {}).Fare}}','{{(Table2.newRow || {}).Distance}}','{{(Table2.newRow || {}).Transportation_Method}}','{{(Table2.newRow || {}).CustomerID}}')
